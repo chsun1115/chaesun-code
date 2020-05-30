@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<title>Lim Chaesun Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+}
+</style>
+<body>
+
+<!--Sidebar-->
+<nav class="sidebar" style="width:35%">
+  <div class="bgimg"></div>
+
+
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="hidden_sidebar" style="display:none;padding-top:150px;right:0;z-index:2" id="Mysidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="hidden_sidebar_01" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="hidden_sidebar_02">
+    <a href="#" class="sidebar_button button" onclick="closeNav()">Home</a>
+    <a href="#about" class="sidebar_button button" onclick="closeNav()">About</a>
+    <a href="#portfolio" class="sidebar_button button" onclick="closeNav()">Portfolio</a>
+    <a href="#contact" class="sidebar_button button" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="page_content main" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="menu_icon_to_open_sidebar" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="header" style="padding:128px 16px" id="home">
+    <h1 class="header01"><b>Lim Chaesun</b></h1>
+    <p>Student.</p>
+    <img src="image/profile.png" class="profile" style="display:block;width:30%;margin:auto;">
+    <img src="image/profile.png" class="profile02" width="500" height="666">
+  </header>
+
+
+     <!-- About Section -->
+      <div class="about_section" id="about">
+        <h2>About</h2>
+        <hr class="hr">
+        <p>
+        name: Lim chaesun<br>
+
+
+        </p>
+        <h3 class="about_section_small">Career</h3>
+        <p>attending Kookmin University<br>
+            Union art academy part-time job (1 year)</p>
+        </div><br>
+      <!-- End About Section -->
+      
+
+      <!-- Portfolio Section -->
+      <div class="portfolio" id="portfolio">
+        <h2 class="grey">My Portfolio</h2>
+        <hr class="hr">
+
+        <!-- Grid for photos -->
+        <div class="row" style="margin:0 -16px">
+          <div class="half">
+            <img src="image/image01.png" style="width:100%">
+            <img src="image/image02.png" style="width:100%">
+            <img src="image/image03.png" style="width:100%">
+          </div>
+
+          <div class="half">
+            <img src="image/image04.png" style="width:100%">
+            <img src="image/image05.png" style="width:100%">
+            <img src="image/image06.png" style="width:100%">
+          </div>
+        <!-- End photo grid -->
+        </div>
+      <!-- End Portfolio Section -->
+      </div>
+
+      <!-- Contact Section -->
+      <div class="contact_section" id="contact" style="margin-bottom:64px">
+        <h2>Contact Me</h2>
+        <hr class="hr">
+
+        <div class="contact_section01">
+          <p>call: 010-3642-4523</p>
+          <p>e-mail:chsun1115@naver.com</p>
+        <p>go to my instagram:<a href="https://www.instagram.com/chaesnn/?hl=ko">@chaesnn</a><br></p>
+        </div>
+        <!-- End Contact Section -->
+      </div>  
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("Mysidebar").style.width = "60%";
+  document.getElementById("Mysidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("Mysidebar").style.display = "none";
+}
+</script>
+
+
+</body>
+</html>
+
